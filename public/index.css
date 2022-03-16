@@ -3,26 +3,106 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8NW1MC-atT4DxZX2iIJ-Z8Uud_tnz2uw7uQ&usqp=CAU");
+    background-repeat: repeat;
 }
 
-#section1 {
+h1 {
     background-color:navy;
     color: white;
     padding: 25px;
+    border-style: outset;
+    border-width: 10px;
+    border-color: orange;
 }
 
-#section2 {
+#noah {
+    background-color: #70E000;
+    color: white;
+    padding: 25px;
+    border-style: ridge;
+    border-width: 6px;
+    border-color: navy;
+
+}
+p {
+    background-color: white;
+    color:black;
+    padding: 10px
+}
+
+#section1 {
     background-color: orange;
     padding: 25px;
+    margin: 50px;
+    box-shadow: 5px 5px black;
 }
 
-#want {
-    padding: 20px;
-    border: solid;
-    border-width: 4px;
-    border-radius: 20px;
-    border-color: navy;
-    background-color:#9EF01A;
-    color: white;
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+#powerball {
+    background-color: white;
+    color: black;
+    padding: 10px
 }
 
