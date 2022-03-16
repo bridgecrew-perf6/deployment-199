@@ -5,5 +5,25 @@ body {
     align-items: center;
 }
 
+#section1 {
+    background-color: orange;
+    margin: 200px;
+    padding: 50px;
+}
 
+
+
+
+
+
+
+
+#want {
+    padding: 20px;
+    border: solid;
+    border: 3px;
+    border-color: navy;
+    background-color: lawngreen;
+    color: white;
+}
 
