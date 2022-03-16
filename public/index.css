@@ -6,15 +6,21 @@ body {
 }
 
 #section1 {
+    background-color:navy;
+    color: white;
+    padding: 25px;
+}
+
+#section2 {
     background-color: orange;
-    margin: 200px, 100px;
+    margin: 100px
     padding: 25px;
 }
 
 #want {
     padding: 20px;
     border: solid;
-    border-width: 5px;
+    border-width: 4px;
     border-radius: 20px;
     border-color: navy;
     background-color:#9EF01A;
