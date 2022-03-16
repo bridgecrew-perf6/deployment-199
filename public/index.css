@@ -7,21 +7,15 @@ body {
 
 #section1 {
     background-color: orange;
-    margin: 200px;
-    padding: 50px;
+    margin: 200px, 50px;
+    padding: 25px;
 }
-
-
-
-
-
-
-
 
 #want {
     padding: 20px;
     border: solid;
-    border: 3px;
+    border-width: 3px;
+    border-radius: 20px;
     border-color: navy;
     background-color: lawngreen;
     color: white;
