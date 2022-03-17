@@ -21,6 +21,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'))
 })
 
+app.get('/api/want', (req, res) => {
+    rollbar.info('someone clicked the button')
+    res.status(200).send('apparently i lied')
+})
 
 //Middleware
 app.use(express.static(path.join(__dirname, "../public")))
